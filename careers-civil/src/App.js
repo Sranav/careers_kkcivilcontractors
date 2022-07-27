@@ -11,8 +11,13 @@ function App() {
     <div className="App">
       <Navbar/>
      <BannerSection/>
-     <CurrentOpening/>
-     <ApplyJob/>
+     <form>
+     <CurrentOpening 
+      
+     />
+     
+     </form>
+     
     </div>
   );
 }

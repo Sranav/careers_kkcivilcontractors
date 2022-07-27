@@ -5,8 +5,11 @@
     padding-top: 30px;
 }
 .job_description{
-    border: 1px solid #ddae40;
+    border: 0.5px solid #ddae40;
     padding: 50px;
+    padding-bottom: 80px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0 #ddae40;
 }
 .curent-opening{
     padding-bottom: 100px;
@@ -16,9 +19,14 @@
     display:flex;
 }
 .modal_class{
-    top: 15%;
+    top: 5%;
     
 }
 .modal_body{
     padding: 40px;
+}
+.job_description-type li{
+    list-style: circle !important;
+   padding: 10px;
+    color: #000;
 }
