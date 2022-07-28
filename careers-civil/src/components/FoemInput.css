@@ -1,3 +1,13 @@
 p{
     color: red;
 }
+.btn_submit{
+    width: 26%;
+    background: #ddae40;
+    margin-top: 22px;
+    float: right;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 70%;
+    color: #fff;
+}

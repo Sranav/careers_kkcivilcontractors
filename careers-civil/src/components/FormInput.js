@@ -1,13 +1,17 @@
-import React, { useState , useEffect } from "react";
+import React, { useState , useEffect,useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./FoemInput.css"
 
 const FormInput = () => {
-    
+  const form = useRef()
+  
   const initialValues = { username: "", phone: "", email: "", year: "" };
   const [formValues, setformValues] = useState(initialValues);
   const [formerrors, setformerrors] = useState({});
   const [isSubmit, setisSubmit] = useState(false)
+ 
   const handleChange=(e)=>{
+    
     const {name,value}=e.target
     setformValues({...formValues,[name]:value})
     console.log(formValues)
@@ -16,6 +20,14 @@ const FormInput = () => {
     e.preventDefault()
     setformerrors(validates(formValues))
     setisSubmit(true)
+  //   emailjs.sendForm("service_ucn95br","template_dc2u0pm",form.current,"pZQZ4ANdLnKuyczkN")
+  //   .then((result) => {
+  //     console.log(result.text)
+  // }, (error) => {
+  //     console.log(error.text)
+  // })
+    
+    
   }
   useEffect(()=>{
     console.log(formerrors)
@@ -47,7 +59,7 @@ const FormInput = () => {
   return (
     <>
     {Object.keys(formerrors).length === 0 && isSubmit ?(<div className="submit_message">Success</div>):null}
-    <form action="" className="form_fields" onSubmit={handleSubmit}>
+    <form action="" className="form_fields" onSubmit={handleSubmit} ref={form} >
       <label htmlFor="">Name:</label>
       <input type="text" name="username" value={formValues.username} onChange={handleChange}/>
       <p>{formerrors.username}</p>
@@ -61,8 +73,8 @@ const FormInput = () => {
       <input type="number" name="year" value={formValues.year} onChange={handleChange}/>
       <p>{formerrors.year}</p>
       <label htmlFor="">Upload Your CV</label>
-      <input type="file" name="" id="" />
-      <button>submit</button>
+      <input type="file" name="cv" id="" />
+      <button className="btn btn_submit" value="send">submit</button>
     </form>
     </>
   );
