@@ -1,0 +1,20 @@
+.footer{
+    padding: 70px;
+    background-color: #111;
+    color: #fff;
+}
+.footer_logo img{
+    margin-left: 28%;
+}
+.logo-sub{
+    margin-top: 10%;
+    text-align: center;
+   
+}
+.logo-sub em{
+    font-size: 18px;
+}
+.footer_links{
+    font-size: 20px;
+    text-transform: uppercase;
+}

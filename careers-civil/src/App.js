@@ -1,23 +1,21 @@
+import "./App.css";
+import ApplyJob from "./components/ApplyJob";
+import BannerSection from "./components/BannerSection";
+import CurrentOpening from "./components/CurrentOpening";
+import Footer from "./components/Footer";
 
-import './App.css';
-import ApplyJob from './components/ApplyJob';
-import BannerSection from './components/BannerSection';
-import CurrentOpening from './components/CurrentOpening';
+import Navbar from "./components/Navbar";
 
-import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-     <BannerSection/>
-     <form>
-     <CurrentOpening 
+      <Navbar />
+      <BannerSection />
       
-     />
-     
-     </form>
-     
+        <CurrentOpening />
+      <Footer/>
+
     </div>
   );
 }
