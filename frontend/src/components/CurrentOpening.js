@@ -23,7 +23,7 @@ function CurrentOpening() {
               <div className="col-md-6">
                 <div className="job_description">
                   <h4>
-                    <u>Software Engineer</u>
+                    <u>Software Enginer</u>
                     <h6>K K Civil contartcors</h6>
                     <h6>Bangalore ,Karanataka</h6>
                   </h4>
