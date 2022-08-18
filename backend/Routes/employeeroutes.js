@@ -9,7 +9,8 @@ const  employee = require('../controller/employeecontroller');
 router.post("/add", employee.add);
 
 //UPDATE
-// router.put("/:id", updateHotel);
+// router.post("/update", employee.update);
+
 // //DELETE
 // router.delete("/:id", deleteHotel);
 // //GET

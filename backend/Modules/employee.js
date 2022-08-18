@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const employeeSchema = new mongoose.Schema(
+const employee = Schema(
   {
     name: {
         type: String,
@@ -9,7 +9,7 @@ const employeeSchema = new mongoose.Schema(
       }, 
       phone: {
         type: String,
-        required: true,
+        required: false,
       },
       email: {
         type: String,
@@ -19,7 +19,7 @@ const employeeSchema = new mongoose.Schema(
       
       yearsofexperience: {
         type: String,
-        required: true,
+       
       },
       resume: {
         type: String,
@@ -27,5 +27,5 @@ const employeeSchema = new mongoose.Schema(
     });
 
 
-const employee = mongoose.model('employee',employeeSchema);
-module.exports=employeeSchema;    
+
+module.exports = mongoose.model("employee", employee, "employee" );

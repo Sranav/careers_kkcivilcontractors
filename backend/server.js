@@ -10,11 +10,12 @@ const employe =require("./Routes/employeeroutes")
 // const path = require("path");
 
 const app = express();
+app.use(express.json())
 
 // app.use(cors());
 
 // Bodyparser middleware
-app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // --DB Config
@@ -25,7 +26,7 @@ app.use(bodyParser.json());
 //   };
 
 mongoose
-  .connect("mongodb+srv://kkciviladmiin01:ilovemsd7@cluster0.dwa0wg4.mongodb.net/?retryWrites=true&w=majority", {
+  .connect("mongodb+srv://admin:ilovemsd7@cluster0.dwa0wg4.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     // useUnifiedTopology: true,
     // useCreateIndex: true,
