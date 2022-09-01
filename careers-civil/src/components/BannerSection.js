@@ -8,7 +8,7 @@ const BannerSection = () => {
         <img src={require('../images/banner-2.jpg')} alt="" />
         </div>
         <div className="banner-heading">
-            <h1>Career</h1>
+            {/* <h1>Career</h1> */}
         </div>
     </section>
     </>

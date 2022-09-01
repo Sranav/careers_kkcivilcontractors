@@ -29,7 +29,7 @@
     color: #fff;
     border-radius: 10px;
 }
-.btn_apply Button:hover{
+.btn_apply:hover{
     background-color: #ddae40 !important;
     columns: #fff;
     border-color: #ddae40 !important;

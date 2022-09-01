@@ -17,13 +17,13 @@ const Footer = () => {
                     <div className="footer_links">
                         <h4>Usefull Links</h4>
                     </div>
-                    <ul>
+                    <ul className='footer_links-about'>
                         <li>
-                            About Us
+                            Home
                         </li>
-                        <li>All Projects</li>
-                        <li>Completed Projects</li>
-                        <li>Ongoing Projects</li>
+                        <li>About Us</li>
+                        <li>Portfolio</li>
+                        <li>Office</li>
                     </ul>
                 </div>
                 <div className="col-md-4">
@@ -31,12 +31,12 @@ const Footer = () => {
                         <h4>Contact Us</h4>
                     </div>
                     <div className="contact-info">
-                        <ul>
+                        <ul className='footer_links-about'>
                             <li>#99, 4th Floor, " K K Arcade", 60 ft road</li>
                             <li>Chandra Layout, Bangalore - 560 040</li>
-                            <li>Landline:(080) 23185426</li>
-                            <li>Email:kk.civilcontractors@gmail.com</li>
-                            <li>Web:www.kkcivilcontractor.com</li>
+                            <li><span className='contactus_span_1'>Landline:</span><a href="tel:(080) 23185426"  className='link_to'> (080) 23185426 </a></li>
+                            <li><span className='contactus_span_2'>Email:</span> <a href="mailto: kk.civilcontractors@gmail.com" target="_blank" className='link_to'> kk.civilcontractors@gmail.com</a></li>
+                            <li><span className='contactus_span_3'>Web:</span> <a href='https://www.kkcivilcontractor.com/' target="_blank" className='link_to' > www.kkcivilcontractor.com</a></li>
                         </ul>
                     </div>
                 </div>

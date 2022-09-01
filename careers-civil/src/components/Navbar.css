@@ -65,3 +65,37 @@
   .navbar-nav .nav-link.active{
     color: #ddae40;
   }
+
+
+
+  @media only screen   
+and (min-width: 1030px)   
+and (max-width: 1366px)  {
+  .navbar-nav{
+    padding-left: 6%;
+  }
+}
+
+@media only screen   
+and (min-device-width : 360px)   
+and (max-device-width : 640px)  {
+  .navbar-nav{
+    padding-left: 0%;
+    margin-top: 20px;
+  }
+  .section-heading{
+    padding-top: 0;
+  }
+  .btn_apply{
+    width: 55%;
+  }
+  .job_description{
+    margin-bottom: 20%;
+    padding: 36px;
+    padding-bottom: 25%;
+  }
+  .curent-opening{
+    padding-bottom: 0%;
+    
+  }
+}

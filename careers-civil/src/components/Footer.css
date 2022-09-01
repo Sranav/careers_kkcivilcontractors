@@ -14,7 +14,38 @@
 .logo-sub em{
     font-size: 18px;
 }
-.footer_links{
+.footer_links h4{
     font-size: 20px;
     text-transform: uppercase;
+}
+.footer_links-about{
+    padding-left: 0px;
+    padding-top: 20px;
+}
+.footer_links-about li{
+    font-size: 16px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(54, 53, 53);
+}
+.contact-us h4{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.contactus_span_1{
+    color: #ddae40;
+    padding-right: 15px;
+}
+.contactus_span_2{
+    color: #ddae40;
+    padding-right: 38px;
+}
+.contactus_span_3{
+    color: #ddae40;
+    padding-right: 42px;
+}
+.link_to{
+    color: #fff;
+}
+.link_to:hover{
+    color: #ddae40;
 }
